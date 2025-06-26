@@ -95,9 +95,8 @@ export default function Header() {
             </Box>
           )}
 
-
-  {/* This pushes right icons to the end */}
-  <Box sx={{ flexGrow: 1 }} />
+          {/* Only push right icons to end on mobile */}
+          {isMobile && <Box sx={{ flexGrow: 1 }} />}
 
           {/* Icons always on right */}
           <Box sx={{ flexGrow: 0, display: "flex", alignItems: "center" }}>
